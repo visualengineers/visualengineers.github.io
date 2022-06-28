@@ -1,0 +1,50 @@
+@font-face {
+    font-family: 'Monda';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("fonts/Monda-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Monda-Bold';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("fonts/Monda-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Signika';
+    font-style: normal;
+    font-weight: 900;
+    font-display: auto;
+    src: url("fonts/Signika-Regular.ttf") format("truetype");
+}
+
+body {
+    font-family: $base-font-family;
+    font-size: 2vh;
+    line-height: 1.5;
+    color: #24292e;
+    background-color: #fff;
+}
+
+h1 {
+    font-family: $heading-font-family;
+    font-size: 5vh;
+}
+
+a {
+    text-decoration: none;
+    color: #002C3D;
+}
+
+.footer, .discover {
+    font-family: "Monda-Bold", Arial;
+    font-size: 1.8vh;
+}
+
+.discover {
+    text-decoration: underline;
+}

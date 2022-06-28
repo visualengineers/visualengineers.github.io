@@ -1,0 +1,55 @@
+.wrapper, .site-header {
+    padding-top: $top-padding;
+    padding-left: $horizontal-padding;
+    padding-right: $horizontal-padding;
+}
+
+.bg {
+    z-index: -1;
+    position: fixed; 
+    top: -50%; 
+    left: -50%; 
+    width: 200%; 
+    height: 200%;
+
+    img {
+        position: absolute; 
+        top: 0; 
+        left: 0; 
+        right: 0; 
+        bottom: 0; 
+        margin: auto; 
+        min-width: 50%;
+        min-height: 50%;
+      }
+}
+
+.description {
+    max-width: $column-width;
+}
+
+.description {
+    position: absolute;
+    top: 25vh;
+}
+
+.discover {
+    position: absolute;
+    bottom: $bottom-padding;
+    right: 0px;
+    background-color: #fff;
+    border: 30px #fff solid;
+    border-top-left-radius: 16px;
+    border-bottom-left-radius: 16px;
+    padding-left: 150px;
+    padding-right: $horizontal-padding;
+}
+
+.footer {
+    position: absolute;
+    bottom: $bottom-padding;
+
+    p {
+        margin-bottom: 30px;
+    }
+}
