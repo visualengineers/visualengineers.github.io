@@ -26,7 +26,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   wurde an der Technischen Universität Dresden gegründet und setzt sich aus 
   Personen aus Forschung und Praxis zusammen.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://visualengineers.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 
