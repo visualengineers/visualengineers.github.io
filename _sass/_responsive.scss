@@ -1,0 +1,65 @@
+@include media-query($on-tablet) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact, 
+    .description {
+        position: relative;
+        align-self: flex-start;
+        padding-top: 0;
+        padding-bottom: $horizontal-padding;
+        top: 0;
+        right: 0;
+        max-width: none;
+    }
+
+    .banner {
+        flex-direction: column;
+        position: relative;
+        bottom: 0;
+        margin-left: -1 * $horizontal-padding;
+        margin-right: -1 * $horizontal-padding;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        max-height: none;
+        min-height: none;
+        justify-content: left;
+        row-gap: 20px;
+
+        div {
+            align-self: flex-start;
+        }
+
+        .text {
+            max-width: none;
+            min-width: none;
+        }
+
+        .logo {
+            min-width: 15vw;
+        }
+    }
+
+    .arrows {
+        display: flex;
+        flex-direction: row;
+        row-gap: 180px;
+        justify-content: space-between;
+
+        .left-arrow {
+            position: relative;
+            top: 0;
+            left: 0;
+            align-self: flex-start;
+        }
+
+        .right-arrow {
+            position: relative;
+            top: 0;
+            right: 0;
+            align-self: end;
+        }
+    }
+}

@@ -24,15 +24,19 @@
 
 body {
     font-family: $base-font-family;
-    font-size: 2vh;
+    font-size: $standard-font-size;
     line-height: 1.5;
     color: #24292e;
     background-color: #fff;
 }
 
+b {
+    font-family: $bold-font-family;
+}
+
 h1 {
     font-family: $heading-font-family;
-    font-size: 5vh;
+    font-size: $heading-font-size;
 }
 
 a {
@@ -40,11 +44,16 @@ a {
     color: #002C3D;
 }
 
-.footer, .discover {
+.footer, .discover, .contact {
     font-family: "Monda-Bold", Arial;
-    font-size: 1.8vh;
+    font-size: $small-font-size;
 }
 
 .discover {
     text-decoration: underline;
+}
+
+.banner {
+    font-family: $base-font-family;
+    font-size: $smaller-font-size;
 }

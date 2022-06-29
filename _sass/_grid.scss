@@ -38,9 +38,11 @@
     bottom: $bottom-padding;
     right: 0px;
     background-color: #fff;
-    border: 30px #fff solid;
-    border-top-left-radius: 16px;
-    border-bottom-left-radius: 16px;
+    border-left: $fat-border-size #fff solid;
+    border-top: $fat-border-size #fff solid;
+    border-bottom: $fat-border-size #fff solid;
+    border-top-left-radius: $fat-border-radius;
+    border-bottom-left-radius: $fat-border-radius;
     padding-left: 150px;
     padding-right: $horizontal-padding;
 }
@@ -50,6 +52,74 @@
     bottom: $bottom-padding;
 
     p {
-        margin-bottom: 30px;
+        margin-bottom: $fat-border-size;
     }
+}
+
+.banner {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    column-gap: 40px;
+
+    background-color: $background-gray;
+    bottom: $bottom-padding;
+    left: 0;
+    padding-left: $horizontal-padding;
+    max-height: 150px;
+    min-height: 150px;
+
+    border-right: $fat-border-size $background-gray solid;
+    border-top: $fat-border-size $background-gray solid;
+    border-bottom: $fat-border-size $background-gray solid;
+    border-top-right-radius: $fat-border-radius;
+    border-bottom-right-radius: $fat-border-radius;
+
+    box-shadow: 4px 5px 9px 0 rgba(115,112,112,0.50);
+
+    div {
+        display: flex;
+        align-self: center;
+    }
+
+    p {
+        align-self: center;
+    }
+
+    .text {
+        max-width: 10vw;
+    }
+
+    .logo img {
+        max-height: 50px;
+        padding-right: 20px;
+    }
+}
+
+.contact {
+    position: absolute;
+    top: $top-padding;
+    right: $horizontal-padding;
+    padding-top: $top-buffer;
+}
+
+.left-arrow {
+    position: absolute;
+    font-family: $bold-font-family;
+    font-size: $standard-font-size * 2;
+    color: #002C3D;
+    opacity: 0.3;
+    top: 45%;
+    left: 5px;
+}
+
+.right-arrow {
+    position: absolute;
+    font-family: $bold-font-family;
+    font-size: $standard-font-size * 2;
+    color: #002C3D;
+    opacity: 0.3;
+    top: 45%;
+    right: 5px;
 }

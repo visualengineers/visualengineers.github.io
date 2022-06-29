@@ -1,0 +1,53 @@
+{%- if include.page == null -%}
+    {% assign display = page %}
+{%- else -%}
+    {% assign display = include.page %}
+{%- endif -%}
+
+<div class="description">
+    {{ display.content }}
+</div>
+
+<div class="contact">
+    <p><a href="{{ display.contact }}">Kontakt</a></p>
+</div>
+
+<div class="banner">
+    <div class="info">
+        {%- unless display.logo == null -%}
+            <p class="logo"><img src="{{site.baseurl}}/assets/images/{{ display.logo }}"></p>
+        {%- endunless -%}
+        <p class="text">
+            <b>{{ display.title }}</b><br />
+            {{ display.address }}
+        </p>
+    </div>
+    {%- if display.founder -%}
+    <div class="founder">
+        <p class="logo"><img src="{{site.baseurl}}/assets/images/logo-people.png"></p>
+        <p class="text"><b>Gründungsmitglied des Arbeitskreises</b></p>
+    </div>
+    {%- endif -%}
+    <div class="competency">
+        <p class="logo"><img src="{{site.baseurl}}/assets/images/logo-competency.png"></p>
+        <p class="text"><b>{{ display.competency }}</b></p>
+    </div>
+</div>
+
+<div class="arrows">
+    <div class="left-arrow">
+        {% assign prev = display.previous.url  %}
+        {%- if prev == null -%}
+            {% assign prev = site.members.last.url %}
+        {%- endif -%}
+        <a href="{{ prev }}">&lt;</a>
+    </div>
+
+    <div class="right-arrow">
+        {% assign next = display.next.url  %}
+        {%- if next == null -%}
+            {% assign next = site.members.first.url %}
+        {%- endif -%}
+        <a href="{{ next }}">&gt;</a>
+    </div>
+</div>

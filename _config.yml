@@ -34,6 +34,11 @@ github_username:  jekyll
 plugins:
   - jekyll-feed
 
+collections:
+  members:
+    output: true
+    permalink: /:collection/:title
+
 sass:
   style: compact
 
