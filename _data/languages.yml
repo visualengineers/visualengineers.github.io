@@ -1,4 +1,17 @@
 en:
-  site_title: Netzwerk Technische Visualistik
+  label: English
+  title: Visual Engineering Network
+  description: >-
+    Visual Engineering is great!
+  contact: Contact
+  discover: Discover the network!
 de:
-  site_title: Visual Engineering Network
+  label: Deutsch
+  title: Netzwerk Technische Visualistik
+  description: >- # this means to ignore newlines until "baseurl:"
+    Technische Visualistik beschäftigt sich im Bereich der Mensch-Computer-Interaktion
+    mit der menschgerechten Darstellung und dem Umgang mit komplexen Daten. Das Netzwerk
+    wurde an der Technischen Universität Dresden gegründet und setzt sich aus 
+    Personen aus Forschung und Praxis zusammen.  
+  contact: Kontakt
+  discover: Das Netzwerk erkunden!

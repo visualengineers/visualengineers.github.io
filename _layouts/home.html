@@ -2,11 +2,24 @@
 layout: default
 ---
 <div class="description">
-    {{ site.description }}
+    {{ site.data.languages[page.lang].description }}
 </div>
 <div class="footer">
-    <p>Kontakt: {{ site.email }}</p>
+    <p>Kontakt: {{ site.email }} | 
+        {%- if page.lang == "de" -%}
+        <a href="{{ site.base_url }}/en">
+            {{ site.data.languages["en"].label }}
+        </a>
+        {%- else -%}
+        <a href="{{ site.base_url }}/de">
+            {{ site.data.languages["de"].label }}
+        </a>
+        {%- endif -%}
+    </p>
 </div>
 <div class="discover">
-    <p><a href="/members">Das Netzwerk erkunden!</a></p>
+    {% assign members = site.members | where: "lang", page.lang %}
+    <p><a href="{{ members.first.permalink }}">
+        {{ site.data.languages[page.lang].discover }}
+    </a></p>
 </div>

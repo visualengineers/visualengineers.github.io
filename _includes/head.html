@@ -3,3 +3,7 @@
     <title>{{ site.title }}</title>
     <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
 </head>
+
+{%- if page.lane == "" -%}
+    {% assign page.lang = "de" %}
+{%- endif -%}

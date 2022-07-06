@@ -37,7 +37,6 @@ plugins:
 collections:
   members:
     output: true
-    permalink: /:collection/:title
 
 sass:
   style: compact

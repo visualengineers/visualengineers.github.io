@@ -1,6 +1,8 @@
 ---
 layout: member
 title:  "Prof. Mandy Keck"
+lang: en
+permalink: /en/members/keck/
 slug: keck
 address: >-
     Professorin für User Experience und Interaktionsdesign

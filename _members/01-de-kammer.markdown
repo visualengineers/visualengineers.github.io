@@ -1,6 +1,8 @@
 ---
 layout: member
 title:  "Prof. Dietrich Kammer"
+lang: de
+permalink: /de/members/kammer/
 slug: kammer
 address: >-
     Professur für Technische Visualistik
