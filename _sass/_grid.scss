@@ -35,7 +35,8 @@
     display: flex;
     flex-direction: row-reverse;
     height: 111px + 2 * $fat-border-size;
-    width: 720px;
+    max-width: 720px;
+    min-width: 720px;
     bottom: $bottom-padding;
     right: 0px;
     background-color: #fff;
