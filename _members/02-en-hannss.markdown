@@ -8,5 +8,5 @@ address: >-
     GTV – Gesellschaft für Technische Visualistik mbH
 contact: info@technische-visualistik.de
 founder: true
-competency: Datenvisualisierung mit Individualcharakter
+competency: Individual data visualization
 ---

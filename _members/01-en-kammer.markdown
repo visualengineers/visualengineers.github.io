@@ -10,6 +10,6 @@ address: >-
 logo: HTW-Logo_Bildmarke.png
 contact: https://dkammer.org/
 founder: true
-competency: Datenvisualisierung mit Individualcharakter
+competency: Individual data visualization
 ---
-Dietrich Kammer und seine Arbeitsgruppe an der HTW Dresden befassen sich mit neuartigen Visualisierungstechnologien und Interaktionstechniken im Bereich virtueller und erweiterter Realität sowie begreifbarer Benutzungsschnittstellen. Derzeit leitet Prof. Kammer Forschungsprojekte zu neuartigen, elastischen Displays sowie zur Visualisierung von Machine-Learning-Prozessen.  
+Dietrich Kammer and his research group at HTW Dresden deal with novel visualization technologies and interaction techniques in the field of virtual and augmented reality as well as tangible user interfaces. Currently, Prof. Kammer is leading research projects on novel, elastic displays as well as on the visualization of machine learning processes.

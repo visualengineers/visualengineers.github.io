@@ -9,5 +9,5 @@ address: >-
     FH Oberösterreich
 contact: https://pure.fh-ooe.at/de/persons/mandy-keck
 founder: true
-competency: Datenvisualisierung mit Individualcharakter
+competency: Individual data visualization
 ---

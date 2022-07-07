@@ -6,7 +6,18 @@ layout: default
 </div>
 
 <div class="contact">
-    <p><a href="{{ page.email }}">{{ site.data.languages[page.lang].contact }}</a></p>
+    <p>
+        <a href="mailto:{{ site.email }}">{{ site.data.languages[page.lang].contact }}</a> | 
+        {%- if page.lang == "de" -%}
+        <a href="{{ site.base_url }}/en/members/{{ page.slug }}">
+            {{ site.data.languages["en"].label }}
+        </a>
+        {%- else -%}
+        <a href="{{ site.base_url }}/de/members/{{ page.slug }}">
+            {{ site.data.languages["de"].label }}
+        </a>
+        {%- endif -%}
+    </p>
 </div>
 
 <div class="banner">
@@ -22,7 +33,7 @@ layout: default
     {%- if page.founder -%}
     <div class="founder">
         <p class="logo"><img src="{{site.baseurl}}/assets/images/logo-people.png"></p>
-        <p class="text"><b>Gründungsmitglied des Arbeitskreises</b></p>
+        <p class="text"><b>{{ site.data.languages[page.lang].founder }}</b></p>
     </div>
     {%- endif -%}
     <div class="competency">

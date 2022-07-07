@@ -2,23 +2,24 @@ $base-font-family: "Monda","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Em
 $bold-font-family: "Monda-Bold","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 $heading-font-family: "Signika","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
-$small-font-size: 1.8vh;
-$smaller-font-size: 1.2vh;
-$heading-font-size: 5vh;
+$small-font-size: 24px; // 1.8vh;
+$smaller-font-size: 15px; // 1.2vh;
+$heading-font-size: 64px; // 5vh;
 $top-buffer: 3.2vh;
-$standard-font-size: 2vh;
+$standard-font-size: 28px; // 2vh;
 
 $top-padding: 3.5vh;
 $bottom-padding: 3.5vh;
 $horizontal-padding: 4vw;
-$column-width: 580px;
+$column-width: 640px;
 
-$fat-border-size: 30px;
-$fat-border-radius: 16px;
+$fat-border-size: 24.5px; // 30px;
+$fat-border-radius: 28px; // 16px;
 
 $background-gray: #EFF0E7;
 
-$on-tablet:        1024px !default;
+$on-tablet:        1452px !default;
+$on-phone:         1024px !default;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {

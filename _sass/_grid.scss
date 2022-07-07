@@ -25,16 +25,17 @@
 }
 
 .description {
-    max-width: $column-width;
-}
-
-.description {
     position: absolute;
+    max-width: $column-width;
     top: 25vh;
 }
 
 .discover {
     position: absolute;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 111px + 2 * $fat-border-size;
+    width: 720px;
     bottom: $bottom-padding;
     right: 0px;
     background-color: #fff;
@@ -43,8 +44,11 @@
     border-bottom: $fat-border-size #fff solid;
     border-top-left-radius: $fat-border-radius;
     border-bottom-left-radius: $fat-border-radius;
-    padding-left: 150px;
     padding-right: $horizontal-padding;
+
+    p {
+        align-self: center;
+    }
 }
 
 .footer {
@@ -59,7 +63,7 @@
 .banner {
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-content: center;
     column-gap: 40px;
 
@@ -67,8 +71,10 @@
     bottom: $bottom-padding;
     left: 0;
     padding-left: $horizontal-padding;
-    max-height: 150px;
-    min-height: 150px;
+    max-height: 111px + 2 * $fat-border-size;
+    min-height: 111px + 2 * $fat-border-size;
+    max-width: 1452px;
+    min-width: 1452px;
 
     border-right: $fat-border-size $background-gray solid;
     border-top: $fat-border-size $background-gray solid;
@@ -88,11 +94,13 @@
     }
 
     .text {
-        max-width: 10vw;
+        max-width: 255px;
+        min-width: 255px; // max-width: 10vw;
     }
 
     .logo img {
-        max-height: 50px;
+        max-height: 100px;
+        max-width: 100px;
         padding-right: 20px;
     }
 }

@@ -2,9 +2,13 @@ en:
   label: English
   title: Visual Engineering Network
   description: >-
-    Visual Engineering is great!
+    In the field of human-computer interaction, visual engineering is concerned with the
+    with the human-oriented representation and handling of complex data. The network
+    was founded at the Technical University of Dresden and is composed of people from 
+    people from research and practice.  
   contact: Contact
   discover: Discover the network!
+  founder: Founding member of the working group
 de:
   label: Deutsch
   title: Netzwerk Technische Visualistik
@@ -15,3 +19,4 @@ de:
     Personen aus Forschung und Praxis zusammen.  
   contact: Kontakt
   discover: Das Netzwerk erkunden!
+  founder: Gründungsmitglied des Arbeitskreises

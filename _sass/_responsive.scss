@@ -13,6 +13,8 @@
         top: 0;
         right: 0;
         max-width: none;
+        min-width: none;
+        width: auto;
     }
 
     .discover {
@@ -35,7 +37,10 @@
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
         max-height: none;
-        min-height: none;
+        min-height: auto;
+        max-width: none;
+        min-width: auto;
+        width: auto;
         justify-content: left;
         row-gap: 20px;
 
@@ -46,6 +51,7 @@
         .text {
             max-width: none;
             min-width: none;
+            width: auto;
         }
 
         .logo {
