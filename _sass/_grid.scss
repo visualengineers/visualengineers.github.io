@@ -34,7 +34,7 @@
     position: absolute;
     display: flex;
     flex-direction: row-reverse;
-    height: 111px + 2 * $fat-border-size;
+    height: $banner-height + 2 * $fat-border-size;
     max-width: 720px;
     min-width: 720px;
     bottom: $bottom-padding;
@@ -55,9 +55,14 @@
 .footer {
     position: absolute;
     bottom: $bottom-padding;
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    max-height: $banner-height + 2 * $fat-border-size;
+    min-height: $banner-height + 2 * $fat-border-size;
 
     p {
-        margin-bottom: $fat-border-size;
+        align-self: center;
     }
 }
 
@@ -72,8 +77,8 @@
     bottom: $bottom-padding;
     left: 0;
     padding-left: $horizontal-padding;
-    max-height: 111px + 2 * $fat-border-size;
-    min-height: 111px + 2 * $fat-border-size;
+    max-height: $banner-height + 2 * $fat-border-size;
+    min-height: $banner-height + 2 * $fat-border-size;
     max-width: 1452px;
     min-width: 1452px;
 

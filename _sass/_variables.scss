@@ -5,13 +5,15 @@ $heading-font-family: "Signika","Segoe UI",Helvetica,Arial,sans-serif,"Apple Col
 $small-font-size: 24px; // 1.8vh;
 $smaller-font-size: 15px; // 1.2vh;
 $heading-font-size: 64px; // 5vh;
-$top-buffer: 3.2vh;
+$top-buffer: 41px;
 $standard-font-size: 28px; // 2vh;
 
-$top-padding: 3.5vh;
-$bottom-padding: 3.5vh;
-$horizontal-padding: 4vw;
+$top-padding: 84px;
+$bottom-padding: 40px;
+$horizontal-padding: 132px;
 $column-width: 640px;
+$banner-height: 111px;
+$padding-offset: 30px;
 
 $fat-border-size: 24.5px; // 30px;
 $fat-border-radius: 28px; // 16px;
@@ -19,7 +21,7 @@ $fat-border-radius: 28px; // 16px;
 $background-gray: #EFF0E7;
 
 $on-tablet:        1452px !default;
-$on-phone:         1024px !default;
+$on-phone:         1224px !default;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {

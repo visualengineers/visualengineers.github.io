@@ -1,4 +1,52 @@
 @include media-query($on-tablet) {
+    body {
+        font-family: $base-font-family;
+        font-size: $standard-font-size * 0.8;
+        line-height: 1.5;
+        color: #24292e;
+        background-color: #fff;
+    }
+
+    h1 {
+        font-size: $heading-font-size * 0.8;
+    }
+
+    .wrapper, .site-header {
+        padding-top: $top-padding - $padding-offset;
+        padding-left: $horizontal-padding - $padding-offset;
+        padding-right: $horizontal-padding - $padding-offset;
+    }
+
+    .footer,
+    .discover {
+        font-size: $small-font-size * 0.8;
+    }
+
+    .footer {
+        bottom: $bottom-padding - $padding-offset;
+    }
+
+    .discover {
+        max-width: 520px;
+        min-width: 520px;
+        bottom: $bottom-padding - $padding-offset;
+    }
+
+    .contact {
+        font-size: $small-font-size * 0.8;
+        top: $top-padding - 2px - $padding-offset;
+        right: $horizontal-padding - $padding-offset;
+        padding-top: $top-buffer - $padding-offset + 28px;
+    }
+
+    .banner {
+        max-width: 1224px;
+        min-width: 1224px;
+        padding-left: $horizontal-padding - $padding-offset;
+    }
+}
+
+@include media-query($on-phone) {
     .wrapper {
         display: flex;
         flex-direction: column;
