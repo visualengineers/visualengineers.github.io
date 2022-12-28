@@ -7,7 +7,7 @@ slug: kammer
 address: >-
     Professur für Technische Visualistik
     Hochschule für Techik und Wirtschaft Dresden
-logo: HTW-Logo_Bildmarke.png
+logo: logo-kammer.png
 contact: https://dkammer.org/
 founder: true
 competency: Datenvisualisierung mit Individualcharakter

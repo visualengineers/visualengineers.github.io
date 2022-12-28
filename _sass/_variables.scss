@@ -2,21 +2,26 @@ $base-font-family: "Monda","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Em
 $bold-font-family: "Monda-Bold","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 $heading-font-family: "Signika","Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
 
-$small-font-size: 24px; // 1.8vh;
-$smaller-font-size: 15px; // 1.2vh;
-$heading-font-size: 64px; // 5vh;
-$top-buffer: 41px;
-$standard-font-size: 28px; // 2vh;
+$small-font-size: 1.8vh;
+$smaller-font-size: 1.2vh;
+$heading-font-size: 4vh;
+$standard-font-size: 2vh;
 
-$top-padding: 84px;
-$bottom-padding: 40px;
-$horizontal-padding: 132px;
-$column-width: 640px;
-$banner-height: 111px;
-$padding-offset: 30px;
+$top-padding: 8vh;
+$top-buffer: $heading-font-size - $standard-font-size;
+$padding-offset: 5vh;
+$bottom-padding: 5vh;
+$horizontal-padding: 7vw;
+$column-width: 30vw;
 
-$fat-border-size: 24.5px; // 30px;
-$fat-border-radius: 28px; // 16px;
+$banner-height: 14vh;
+$banner-logo-padding: 1vw;
+$banner-width: 80vw;
+$banner-text-width: 16vw;
+$banner-text-padding: 3vw;
+
+$fat-border-size: 2.5vh;
+$fat-border-radius: 2.5vh;
 
 $background-gray: #EFF0E7;
 

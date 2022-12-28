@@ -24,6 +24,23 @@
       }
 }
 
+.background-gradient::after {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    bottom: 0; 
+    margin: auto; 
+    min-width: 50%;
+    min-height: 50%;
+    background-image: linear-gradient(165deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0.8589810924369747) 30%, rgba(255,255,255,0) 60%);
+    content: '';
+  }
+
+/*.background-gradient {    
+    background-image: linear-gradient(167deg, #FFFFFF 0%, rgba(239,240,231,0.00) 97%);
+}*/
+
 .description {
     position: absolute;
     max-width: $column-width;
@@ -34,9 +51,10 @@
     position: absolute;
     display: flex;
     flex-direction: row-reverse;
-    height: $banner-height + 2 * $fat-border-size;
-    max-width: 720px;
-    min-width: 720px;
+    height: $banner-height;
+    width: 35vw;
+    /*max-width: 720px;
+    min-width: 720px;*/
     bottom: $bottom-padding;
     right: 0px;
     background-color: #fff;
@@ -55,11 +73,13 @@
 .footer {
     position: absolute;
     bottom: $bottom-padding;
+    border-top: $fat-border-size #ffffff00 solid;
+    border-bottom: $fat-border-size #ffffff00 solid;
     display: flex;
     justify-content: left;
     align-content: center;
-    max-height: $banner-height + 2 * $fat-border-size;
-    min-height: $banner-height + 2 * $fat-border-size;
+    max-height: $banner-height;
+    min-height: $banner-height;
 
     p {
         align-self: center;
@@ -71,16 +91,13 @@
     display: flex;
     justify-content: left;
     align-content: center;
-    column-gap: 40px;
 
     background-color: $background-gray;
     bottom: $bottom-padding;
     left: 0;
     padding-left: $horizontal-padding;
-    max-height: $banner-height + 2 * $fat-border-size;
-    min-height: $banner-height + 2 * $fat-border-size;
-    max-width: 1452px;
-    min-width: 1452px;
+    width: $banner-width;
+    height: $banner-height;
 
     border-right: $fat-border-size $background-gray solid;
     border-top: $fat-border-size $background-gray solid;
@@ -100,14 +117,18 @@
     }
 
     .text {
-        max-width: 255px;
-        min-width: 255px; // max-width: 10vw;
+        // max-width: 255px;
+        // min-width: 255px; 
+        width: $banner-text-width;
+        padding-right: $banner-text-padding;
     }
 
     .logo img {
-        max-height: 100px;
-        max-width: 100px;
-        padding-right: 20px;
+        //max-height: 100px;
+        //max-width: 100px;
+        max-height: $banner-height - $fat-border-size;
+        width: $banner-height - $fat-border-size;
+        padding-right: $banner-logo-padding;
     }
 }
 
@@ -125,7 +146,7 @@
     color: #002C3D;
     opacity: 0.3;
     top: 45%;
-    left: 5px;
+    left: 1vw;
 }
 
 .right-arrow {
@@ -135,5 +156,5 @@
     color: #002C3D;
     opacity: 0.3;
     top: 45%;
-    right: 5px;
+    right: 1vw;
 }

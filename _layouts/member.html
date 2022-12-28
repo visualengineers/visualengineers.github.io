@@ -7,7 +7,7 @@ layout: default
 
 <div class="contact">
     <p>
-        <a href="mailto:{{ site.email }}">{{ site.data.languages[page.lang].contact }}</a> | 
+        <a href="{{ page.contact }}" target="_blank">{{ site.data.languages[page.lang].contact }}</a> | 
         {%- if page.lang == "de" -%}
         <a href="{{ site.base_url }}/en/members/{{ page.slug }}">
             {{ site.data.languages["en"].label }}
@@ -30,12 +30,18 @@ layout: default
             {{ page.address }}
         </p>
     </div>
-    {%- if page.founder -%}
     <div class="founder">
         <p class="logo"><img src="{{site.baseurl}}/assets/images/logo-people.png"></p>
-        <p class="text"><b>{{ site.data.languages[page.lang].founder }}</b></p>
-    </div>
-    {%- endif -%}
+        <p class="text">
+            <b>
+                {%- if page.founder -%}
+                    {{ site.data.languages[page.lang].founder }}
+                {%- else -%}
+                    {{ site.data.languages[page.lang].supporter }}
+                {%- endif -%}
+            </b>
+        </p>
+    </div>    
     <div class="competency">
         <p class="logo"><img src="{{site.baseurl}}/assets/images/logo-competency.png"></p>
         <p class="text"><b>{{ page.competency }}</b></p>
@@ -54,7 +60,17 @@ layout: default
         {%- if prev == null -%}
             {% assign prev = members.last.url  %}
         {%- endif -%}
-        <a href="{{ prev }}">&lt;</a>
+        <a href="{{ prev }}">
+            <svg width="25px" height="103px" viewBox="0 0 25 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300525484">
+                    <g id="Version-01" transform="translate(-25.000000, -455.000000)" fill="#002C3D">
+                        <g id="PreviousRounded" transform="translate(0.000000, 419.000000)">
+                            <path d="M48.517625,39.06175 C47.094125,35.51275 44.794625,35.51275 43.371125,39.06175 L26.617625,80.83075 C25.194125,84.37975 25.194125,90.11275 26.617625,93.66175 L43.371125,135.43075 C44.794625,138.97975 47.094125,138.97975 48.517625,135.43075 C49.941125,131.88175 49.941125,126.14875 48.517625,122.59975 L34.355625,87.20075 L48.517625,51.89275 C49.941125,48.34375 49.904625,42.51975 48.517625,39.06175" id="Fill-1"></path>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
     </div>
 
     <div class="right-arrow">
@@ -68,6 +84,18 @@ layout: default
         {%- if next == null -%}
             {% assign next = members.last.url  %}
         {%- endif -%}
-        <a href="{{ next }}">&gt;</a>
+        <a href="{{ next }}">
+            <svg width="25px" height="103px" viewBox="0 0 25 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.300525484">
+                    <g id="Version-01" transform="translate(-1870.000000, -455.000000)" fill="#002C3D">
+                        <g id="Group" transform="translate(1847.000000, 419.000000)">
+                            <g id="PreviousRounded-Copy" transform="translate(36.500000, 91.000000) scale(-1, 1) translate(-36.500000, -91.000000) ">
+                                <path d="M48.517625,39.06175 C47.094125,35.51275 44.794625,35.51275 43.371125,39.06175 L26.617625,80.83075 C25.194125,84.37975 25.194125,90.11275 26.617625,93.66175 L43.371125,135.43075 C44.794625,138.97975 47.094125,138.97975 48.517625,135.43075 C49.941125,131.88175 49.941125,126.14875 48.517625,122.59975 L34.355625,87.20075 L48.517625,51.89275 C49.941125,48.34375 49.904625,42.51975 48.517625,39.06175" id="Fill-1"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </svg>
+        </a>
     </div>
 </div>

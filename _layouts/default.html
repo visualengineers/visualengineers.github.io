@@ -7,9 +7,15 @@
 
     {%- include header.html -%}
 
+    {% assign bgimage = '/assets/images/background.png' %}
+    {% if page.slug %}
+      {% assign bgimage = '/assets/images/' | append: 'background-' | append: page.slug | append: '.png' %}
+      {% assign gradient = 'background-gradient' %}
+    {% endif %}
+
     <main class="page-content" aria-label="Content">
-        <div class="bg">
-            <img src="{{ '/assets/images/background.jpg' | relative_url }}" alt="">
+        <div class="bg {{ gradient }}">
+            <img src="{{ bgimage | relative_url }}" alt="">
         </div>
       <div class="wrapper">
         {{ content }}

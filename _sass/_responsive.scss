@@ -1,4 +1,4 @@
-@include media-query($on-tablet) {
+/* @include media-query($on-tablet) {
     body {
         font-family: $base-font-family;
         font-size: $standard-font-size * 0.8;
@@ -44,7 +44,7 @@
         min-width: 1224px;
         padding-left: $horizontal-padding - $padding-offset;
     }
-}
+} */
 
 @include media-query($on-phone) {
     .wrapper {
